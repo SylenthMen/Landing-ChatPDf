@@ -1,8 +1,11 @@
 ---
 const { Texto } = Astro.props;
+const { enlace } = Astro.props;
 ---
 
 <a
+  target="_blank"
+  href={enlace}
   class="overflow-hidden relative w-44 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group"
 >
   {Texto}
