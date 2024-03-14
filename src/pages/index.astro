@@ -1,0 +1,53 @@
+---
+import NavBar from "../components/NavBar.astro";
+import Header from "../components/Header.astro";
+import Boton from "../components/Boton.astro";
+import Bg from "../components/Bg.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Lector de documentos pdf aistido con inteligencia artificial"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Chatea Con Tu Pdf</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#202020]">
+    <Bg>
+      <NavBar />
+
+      <div
+        class="sm:flex flex-col justify-center items-center text-white sm:max-w-[400px] sm:mt-6 m-auto h-[100vh] animate-slide-up-fade"
+      >
+        <h1
+          class="text-4xl font-bold text-center uppercase text-pink-600 sm:mt-6 lg:mt-0 mb-4"
+        >
+          chatea gratis con tu Documento pdf
+        </h1>
+        <p class="mb-4">
+          Utilizando inteligencia artificial, haz cualquier pregunta al
+          documento pdf que subas
+        </p>
+        <div class="sm:w-full h-auto overflow-hidden lg:w-[600px]">
+          <Header />
+          <div class="mt-6 flex justify-center items-center gap-6">
+            <Boton Texto="Empezar" />
+            <Boton Texto="Indicaciones" />
+          </div>
+        </div>
+      </div>
+    </Bg>
+  </body>
+</html>

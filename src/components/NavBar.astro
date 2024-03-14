@@ -1,0 +1,70 @@
+<nav
+  class="bg-black/40 animate-fade-in-right sticky top-0 z-10 backdrop-blur-sm text-white p-4 border-b sm:w-full"
+>
+  <div class="container mx-auto flex justify-between items-center sticky top-0">
+    <div class="text-lg font-semibold">
+      <a href="/" class="text-white"
+        ><img
+          class="w-12"
+          src="/favicon.webp"
+          alt="Icono de la aplicacion Chaeta con el pdf"
+        /></a
+      >
+    </div>
+    <div class="hidden md:flex space-x-4 gap-4">
+      <a href="/" class="hover:text-pink-700">Inicio</a>
+      <a href="/Servicios/" class="hover:text-pink-700">Servicios</a>
+      <a href="/about/" class="hover:text-pink-700">Acerca de</a>
+      <a href="https://wa.me/message/3D5G2KIGCG5SG1" class="hover:text-pink-700"
+        >Contacto</a
+      >
+    </div>
+    <button
+      aria-label="Boton del menu principal"
+      id="menu-btn"
+      class="md:hidden block text-white focus:outline-none"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"></path></svg
+      >
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="animate-fade-in-down md:hidden hidden">
+    <a href="/" class="block py-2 hover:bg-pink-700">Inicio</a>
+    <a href="/Servicios/" class="block py-2 hover:bg-pink-700">Servicios</a>
+    <a href="/about/" class="block py-2 hover:bg-pink-700">Acerca de</a>
+    <a
+      href="https://wa.me/message/3D5G2KIGCG5SG1"
+      class="block py-2 hover:bg-pink-700">Contacto</a
+    >
+  </div>
+</nav>
+
+<script>
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    var menu = document.getElementById("mobile-menu");
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+    } else {
+      menu.classList.add("hidden");
+    }
+  });
+</script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+  * {
+    font-family: "Montserrat", sans-serif;
+  }
+</style>
