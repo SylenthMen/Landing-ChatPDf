@@ -1,3 +1,7 @@
+---
+import Boton from "../components/Boton.astro";
+---
+
 <nav
   class="bg-black/40 animate-fade-in-right sticky top-0 z-10 backdrop-blur-sm text-white p-4 border-b sm:w-full"
 >
@@ -11,13 +15,17 @@
         /></a
       >
     </div>
-    <div class="hidden md:flex space-x-4 gap-4">
+    <div class="hidden md:flex space-x-4 gap-4 items-center">
       <a href="/" class="hover:text-pink-700">Inicio</a>
       <!-- <a href="/Servicios/" class="hover:text-pink-700">Servicios</a> -->
       <a href="/about/" class="hover:text-pink-700">Acerca de</a>
       <a href="https://wa.me/message/3D5G2KIGCG5SG1" class="hover:text-pink-700"
         >Contacto</a
       >
+      <Boton
+        Texto="Empezar"
+        enlace="https://platicaconelpdf.sylenthmen.site/"
+      />
     </div>
     <button
       aria-label="Boton del menu principal"
