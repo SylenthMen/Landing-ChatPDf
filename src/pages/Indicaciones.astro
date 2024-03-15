@@ -1,0 +1,76 @@
+---
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+import Boton from "../components/Boton.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    <meta
+      name="description"
+      content="indicaciones de como poder usar la aplicacion para chatear con el pdf asistido por inteligencia artificial"
+    />
+    <title>Indicaciones | Chatea con tu pdf</title>
+  </head>
+  <body class="bg-[#202020] text-white">
+    <NavBar />
+    <section
+      class="flex flex-col justify-center items-center m-auto max-w-[500px] gap-y-4 p-4 animate-fade-in-up"
+    >
+      <h1 class="text-sky-600 font-bold text-3xl">
+        ¿Cómo usar Chatea con tu pdf?
+      </h1>
+      <p>
+        Chatea con tu pdf es una herramienta que te permite preguntar a tus
+        archivos pdf en mensajes de texto. Para usarla, sigue los siguientes
+        pasos:
+      </p>
+      <img
+        class="animate-fade-in-up contrast-125"
+        src="/favicon.webp"
+        alt="Icono de la aplicacion chatea con el pdf"
+      />
+      <ol>
+        <li>
+          <p class="mb-4">
+            <strong class="text-sky-600 text-2xl">Sube tu archivo pdf:</strong> Haz
+            clic en el botón "Subir archivo" y selecciona el archivo que quieres
+            usar.
+          </p>
+        </li>
+        <li>
+          <p class="mb-4">
+            <strong class="text-yellow-600 text-2xl"
+              >Espera a que se suba:</strong
+            > Una vez que hayas subido tu archivo, puedes realizar la pregunta que
+            quieras o simplemente pedir un resumen.
+          </p>
+        </li>
+        <li>
+          <p class="mb-4">
+            <strong class="text-green-600 text-2xl"
+              >Visualiza la respuesta:</strong
+            > En la parte inferior podras ver un breve resumen del contenido del
+            archivo.
+          </p>
+        </li>
+        <li>
+          <p class="mb-4">
+            <strong class="text-red-600 text-2xl"
+              >Si deseas usar otro documento:</strong
+            > Solamente sube dicho documento en el cual quieres trabajar y listo.
+          </p>
+        </li>
+      </ol>
+      <Boton
+        Texto="Empezar"
+        enlace="https://platicaconelpdf.sylenthmen.site/"
+      />
+    </section>
+    <Footer />
+  </body>
+</html>

@@ -13,7 +13,7 @@ import Footer from "../components/Footer.astro";
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="Lector de documentos pdf aistido con inteligencia artificial"
+      content="Lector de documentos pdf asistido con inteligencia artificial"
     />
     <meta name="generator" content={Astro.generator} />
     <title>Chatea Con Tu Pdf | Optimiza tu tiempo de estudio y trabajo.</title>
@@ -26,9 +26,8 @@ import Footer from "../components/Footer.astro";
     </style>
   </head>
   <body class="bg-[#202020]">
+    <NavBar />
     <Bg>
-      <NavBar />
-
       <div
         class="sm:flex flex-col justify-center items-center text-white sm:max-w-[400px] sm:mt-6 m-auto h-[100vh] animate-slide-up-fade"
       >
@@ -48,7 +47,7 @@ import Footer from "../components/Footer.astro";
               Texto="Empezar"
               enlace="https://platicaconelpdf.sylenthmen.site/"
             />
-            <Boton Texto="Indicaciones" />
+            <Boton Texto="Indicaciones" enlace="/Indicaciones/" />
           </div>
         </div>
       </div>
